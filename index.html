@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+    <!-- tailwind+daisy -->
+ <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- front -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmR+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+    <body class="bg-gray-100 min-h-screen font-sans">
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-6">
+    <h1 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6">
+      Job Application Tracker
+    </h1>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+      <div class="bg-white rounded-lg shadow p-5">
+        <p class="text-gray-500 text-sm">Total</p>
+        <p id="totalcount"class="text-3xl font-bold text-gray-800">8</p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow p-5">
+        <p class="text-gray-500 text-sm">Interview</p>
+        <p id="interviewcount"class="text-3xl font-bold text-green-600">0</p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow p-5">
+        <p class="text-gray-500 text-sm">Rejected</p>
+        <p id="rejectcount"class="text-3xl font-bold text-red-600">0</p>
+      </div>
+    </div>
+    <!--job sction-->
+<div id="jobList">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-lg font-semibold">Available Jobs</h2>
+      <span id="jobcount"class="text-sm text-gray-500">8 jobs</span>
+    </div>
+    <div class="flex gap-2 mb-6">
+      <button id="allbtn" class="btn btn-primary btn-sm">All</button>
+      <button id="interviewbtn" class="btn btn-outline btn-success btn-sm">Interview</button>
+      <button id="rejectbtn"class="btn btn-outline btn-error btn-sm">Rejected</button>
+    </div>
+<!--card 1-->
+    <div
+      class="border rounded-lg p-5 mb-6 relative  transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+      <button class="absolute top-4 right-4 text-gray-400 hover:text-red-500 transition" title="Delete job" >
+        🗑️</button>
+      <h3 class="font-semibold">Programming Hero</h3>
+      <p class="text-sm text-gray-600">Cinematographer and Editor</p>
+      <p class="text-sm text-gray-500 mt-1">
+        Remote · Intern · 20 – 25k
+      </p>
+
+      <span class="inline-block mt-3 text-xs font-medium bg-base-200 px-3 py-1 rounded">
+        NOT APPLIED
+      </span>
+
+      <p class="text-sm text-gray-600 mt-3 max-w-3xl">
+        Exprience in video production, editing, and storytelling.
+        Must have a strong portfolio and ability to work in a fast-paced environment.
+      </p>
+      <div class="flex gap-3 mt-4">
+        <button class="btn btn-success btn-sm">
+          Interview
+        </button>
+        <button class="btn btn-error btn-sm">
+          Rejected
+        </button>
+      </div>
+    </div>
+    <!--CARD 2 -->
+    <div
+      class="border rounded-lg p-5 mb-6 relative transition-all duration-300
+             hover:shadow-xl hover:-translate-y-1">
+
+      <button
+        class="absolute top-4 right-4 text-gray-400 hover:text-red-500 transition"
+        title="Delete job"
+      >
+        🗑️
+      </button>
+
+      <h3 class="font-semibold">Programming Hero</h3>
+      <p class="text-sm text-gray-600">Operations Associate</p>
+      <p class="text-sm text-gray-500 mt-1">
+        Remote · Part-time · 20 – 25k
+      </p>
+
+      <span class="inline-block mt-3 text-xs font-medium bg-base-200 px-3 py-1 rounded">
+        NOT APPLIED
+      </span>
+
+      <p class="text-sm text-gray-600 mt-3 max-w-3xl">
+        Create stunning web experiences for high-profile clients.
+        Must have portfolio and experience with modern web design trends.
+      </p>
+
+      <div class="flex gap-3 mt-4">
+        <button class="btn btn-success btn-sm">
+          Interview
+        </button>
+        <button class="btn btn-error btn-sm">
+          Rejected
+        </button>
+      </div>
+    </div>
+<!--card 3-->
+ <div
+      class="border rounded-lg p-5 mb-6 relative transition-all duration-300
+             hover:shadow-xl hover:-translate-y-1">
+
+      <button
+        class="absolute top-4 right-4 text-gray-400 hover:text-red-500 transition"
+        title="Delete job"
+      >
+        🗑️
+      </button>
+
+      <h3 class="font-semibold">Programming Hero</h3>
+      <p class="text-sm text-gray-600">Social Media and Content Executive</p>
+      <p class="text-sm text-gray-500 mt-1">
+        Remote · Part-time · 22 – 25k
+      </p>
+
+      <span class="inline-block mt-3 text-xs font-medium bg-base-200 px-3 py-1 rounded">
+        NOT APPLIED
+      </span>
+
+      <p class="text-sm text-gray-600 mt-3 max-w-3xl">
+        Create stunning web experiences for high-profile clients.
+        Must have portfolio and experience with modern web design trends.
+      </p>
+
+      <div class="flex gap-3 mt-4">
+        <button class="btn btn-success btn-sm">
+          Interview
+        </button>
+        <button class="btn btn-error btn-sm">
+          Rejected
+        </button>
+      </div>
+    </div>
+<!--card 4-->
+ <div
+      class="border rounded-lg p-5 mb-6 relative transition-all duration-300
+             hover:shadow-xl hover:-translate-y-1">
+
+      <button
+        class="absolute top-4 right-4 text-gray-400 hover:text-red-500 transition"
+        title="Delete job"
+      >
+        🗑️
+      </button>
+
+      <h3 class="font-semibold">Programming Hero</h3>
+      <p class="text-sm text-gray-600">Growth Executive,Communication</p>
+      <p class="text-sm text-gray-500 mt-1">
+        Remote · Part-time · 22 – 25k
+      </p>
+
+      <span class="inline-block mt-3 text-xs font-medium bg-base-200 px-3 py-1 rounded">
+        NOT APPLIED
+      </span>
+
+      <p class="text-sm text-gray-600 mt-3 max-w-3xl">
+        Create stunning web experiences for high-profile clients.
+        Must have portfolio and experience with modern web design trends.
+      </p>
+
+      <div class="flex gap-3 mt-4">
+        <button class="btn btn-success btn-sm">
+          Interview
+        </button>
+        <button class="btn btn-error btn-sm">
+          Rejected
+        </button>
+      </div>
+    </div>
+    <!--card 5-->
+  <div
+      class="border rounded-lg p-5 mb-6 relative transition-all duration-300
+             hover:shadow-xl hover:-translate-y-1">
+
+      <button
+        class="absolute top-4 right-4 text-gray-400 hover:text-red-500 transition"
+        title="Delete job"
+      >
+        🗑️
+      </button>
+
+      <h3 class="font-semibold">Programming Hero</h3>
+      <p class="text-sm text-gray-600">Web designer</p>
+      <p class="text-sm text-gray-500 mt-1">
+        Remote · Part-time · 20 – 25k
+      </p>
+
+      <span class="inline-block mt-3 text-xs font-medium bg-base-200 px-3 py-1 rounded">
+        NOT APPLIED
+      </span>
+
+      <p class="text-sm text-gray-600 mt-3 max-w-3xl">
+        Create stunning web experiences for high-profile clients.
+        Must have portfolio and experience with modern web design trends.
+      </p>
+
+      <div class="flex gap-3 mt-4">
+        <button class="btn btn-success btn-sm">
+          Interview
+        </button>
+        <button class="btn btn-error btn-sm">
+          Rejected
+        </button>
+      </div>
+    </div>
+<!--card 6-->
+ <div
+      class="border rounded-lg p-5 mb-6 relative transition-all duration-300
+             hover:shadow-xl hover:-translate-y-1">
+
+      <button
+        class="absolute top-4 right-4 text-gray-400 hover:text-red-500 transition"
+        title="Delete job"
+      >
+        🗑️
+      </button>
+
+      <h3 class="font-semibold">Programming Hero</h3>
+      <p class="text-sm text-gray-600">Frontend Developer</p>
+      <p class="text-sm text-gray-500 mt-1">
+        Remote · Part-time · 20 – 25k
+      </p>
+
+      <span class="inline-block mt-3 text-xs font-medium bg-base-200 px-3 py-1 rounded">
+        NOT APPLIED
+      </span>
+
+      <p class="text-sm text-gray-600 mt-3 max-w-3xl">
+        Create stunning web experiences for high-profile clients.
+        Must have portfolio and experience with modern web design trends.
+      </p>
+
+      <div class="flex gap-3 mt-4">
+        <button class="btn btn-success btn-sm">
+          Interview
+        </button>
+        <button class="btn btn-error btn-sm">
+          Rejected
+        </button>
+      </div>
+    </div>
+<!--card 7-->
+ <div
+      class="border rounded-lg p-5 mb-6 relative transition-all duration-300
+             hover:shadow-xl hover:-translate-y-1">
+
+      <button
+        class="absolute top-4 right-4 text-gray-400 hover:text-red-500 transition"
+        title="Delete job"
+      >
+        🗑️
+      </button>
+
+      <h3 class="font-semibold">Programming Hero</h3>
+      <p class="text-sm text-gray-600">Project Mannger</p>
+      <p class="text-sm text-gray-500 mt-1">
+        Remote · Part-time · 20 – 25k
+      </p>
+
+      <span class="inline-block mt-3 text-xs font-medium bg-base-200 px-3 py-1 rounded">
+        NOT APPLIED
+      </span>
+
+      <p class="text-sm text-gray-600 mt-3 max-w-3xl">
+        Create stunning web experiences for high-profile clients.
+        Must have portfolio and experience with modern web design trends.
+      </p>
+
+      <div class="flex gap-3 mt-4">
+        <button class="btn btn-success btn-sm">
+          Interview
+        </button>
+        <button class="btn btn-error btn-sm">
+          Rejected
+        </button>
+      </div>
+    </div>
+<!--card 8-->
+ <div
+      class="border rounded-lg p-5 mb-6 relative transition-all duration-300
+             hover:shadow-xl hover:-translate-y-1">
+
+      <button
+        class="absolute top-4 right-4 text-gray-400 hover:text-red-500 transition"
+        title="Delete job"
+      >
+        🗑️
+      </button>
+
+      <h3 class="font-semibold">Programming Hero</h3>
+      <p class="text-sm text-gray-600">marketing</p>
+      <p class="text-sm text-gray-500 mt-1">
+        Remote · Part-time · 20 – 25k
+      </p>
+
+      <span class="inline-block mt-3 text-xs font-medium bg-base-200 px-3 py-1 rounded">
+        NOT APPLIED
+      </span>
+
+      <p class="text-sm text-gray-600 mt-3 max-w-3xl">
+        Create stunning web experiences for high-profile clients.
+        Must have portfolio and experience with modern web design trends.
+      </p>
+
+      <div class="flex gap-3 mt-4">
+        <button class="btn btn-success btn-sm">
+          Interview
+        </button>
+        <button class="btn btn-error btn-sm">
+          Rejected
+        </button>
+      </div>
+    </div>
+</div>
+<!-- EMPTY STATE -->
+    <div id="emptyState" class="hidden text-center py-20">
+      <div class="text-6xl mb-4">📭</div>
+      <h3 class="text-lg font-semibold">No jobs available</h3>
+      <p class="text-sm text-gray-500">
+        There are no jobs in this category yet
+      </p>
+    </div>
+
+  </div>
+<!--script-->
+<script src="./script/machine.js"></script>
+</body>
+</html>
+</body>
+</html>
