@@ -65,7 +65,6 @@ function filterJobs(type) {
 
   updateActiveTabStyle(type);
 }
-
   
 function updateActiveTabStyle(type) {
   allBtn.classList.add("btn-outline");
