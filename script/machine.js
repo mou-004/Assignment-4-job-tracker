@@ -103,7 +103,6 @@ document.querySelectorAll(".btn-error").forEach((btn) => {
     filterJobs(activeTab);
   });
 });
-
 /* dlt */
 document.querySelectorAll(".absolute").forEach((deleteBtn) => {
   deleteBtn.addEventListener("click", () => {
