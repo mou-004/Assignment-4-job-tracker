@@ -53,7 +53,6 @@ function filterJobs(type) {
       card.style.display = "none";
     }
   });
-
   // Empty state
   emptyState.classList.toggle("hidden", visible !== 0);
 
