@@ -32,7 +32,6 @@ function updateDashboard() {
   interviewCountEl.innerText = interview;
   rejectCountEl.innerText = rejected;
 }
-
 //filtering job 
 function filterJobs(type) {
   activeTab = type;
