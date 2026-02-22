@@ -7,7 +7,6 @@ const totalCountEl = document.getElementById("totalcount");
 const allBtn = document.getElementById("allbtn");
 const interviewTabBtn = document.getElementById("interviewbtn");
 const rejectTabBtn = document.getElementById("rejectbtn");
-
 const emptyState = document.getElementById("emptyState");
 const jobCountText = document.getElementById("jobcount");
 
